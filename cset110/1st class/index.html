@@ -1,0 +1,406 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0">
+    <title>SEO-Friendly Web Page Example </title>
+    <meta name="description" content="An example of an SEO-friendly
+    web page structure using semantic HTML tags.">
+    <!--Today In Class we Learned
+    a tag is something that is put in <>, tags can be semantic or non semantic . 
+    Non semantic tags are tags that dont clearly tell the programmer about the content (<div> or <span>.) 
+    Semantic tags are the tags that clearly state their content (<footer> <head> <article> <img> and <p>)
+    tags- <p> is paragraph, <h1>-<h6> are headers ranging in size (h1 is biggest h6 is smallest).
+    syntax- the page always states <!DOCTYPE...>, <html>, <body>, <header>...
+    HTML= HyperText Markeup Language- CSS= Cascading Style Sheet.
+    HTML is used for web design and outline, while CSS is used for styling the code/design. 
+    HTML was proposed by Tim Berners-Lee who made a prototype of a system for researchers at CERN to
+    system researchers in 1980, then in 1989 he proposed an internet based hypertext system. 
+    void elements neveer allow it to have content, (area, base, input, meta...)
+    imgages= <img src="imagelink.jpg" alt"Alt text">
+    links= <p>this link takes you <a href= "google.com">to google<a/><p/> 
+    OR JUST <a href ="URL">link text</a>
+    if an image or link is being cited from an internal img/link in a differnet folder or
+    file in the doc, we do ../ in front of the link. Target attribute specifies where to open the linked doc. 
+    target="_blank" will open in a new window, target="_parent" will open the link in the parent window
+    target="_top" will open the document in the full body of the window. 
+    for adjusting width and height, you ONLY put the number in parenthesis, not px.
+    To link a part of a page to another part of the page, such as a table of contents,
+    you need to set an id to where the link will take you, and .
+    that will look like this- <a href="FirstSource">First Source</a>
+    id="FirstSource"
+    -->
+
+</head>
+<body> 
+    <div>
+    <h1>GeeksforGeeks</h1>
+    <h2>Nested Unordered List</h2>
+    <p>GeeksforGeeks courses List:</p>
+ <!--dont use HTML headings for bold or big writing, only for headings.-->
+ <!--Geeks for Geeks Unordered List-->
+        <ul> 
+            <li>DSA</li>
+            <ul>
+                <li>Array</li> <!--Nesting the lists will create the open circle-->
+                <li>Linked List</li>
+                <li>stack</li>
+                <li>Queue</li>
+            </ul>
+            <li>Web Technologies</li>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+            </ul>
+            <li>Apptitude</li>
+            <li>Gate</li>
+            <li>Placement</li> 
+        </ul>
+    </div>
+
+    <div>
+<!--Ordered List -->
+    <ol type="I">
+        <li>Background Skills</li> <!--the type will determine what kind of list it is-->
+            <ol type="A"> 
+                <li>Unix Commands</li>
+                <li>Vim Test editors</li>
+            </ol>
+        <li>HTML</li>
+        <ol type="A"> 
+            <li>Minimal Page</li>
+            <li>Headings</li>
+            <li>Elements</li>
+            <li>Lists</li> 
+            <ol type="i">
+                <li>Minimal Page</li>
+                <li>Headings</li>
+                <li>Elements</li>
+                <li>Lists</li>
+            </ol>
+            <li>Links</li>
+                <ol type="i">
+                    <li>Absolute</li>
+                    <li>Relative</li>
+                </ol>
+            <li>Elements</li>
+            </ol>
+        <li>CSS</li>
+        <ol type="A"> 
+            <li>Anatomy</li>
+            <li>Basic Selection</li>
+                <ol type="i">
+                    <li>Element</li>
+                    <li>Class</li>
+                    <li>ID</li>
+                    <li>Group</li>
+                </ol>
+            <li>The DOM</li>
+            <li>Advanced Selectors</li>
+            <li>Box Model</li>
+            </ol>
+        <li>Programming</li>  
+        <ol type="A"> 
+            <li>Python</li>
+            <li>Javascript</li>
+            </ol>
+
+        <li>Database</li> 
+            <ol type="A"> 
+            <li>Flat File</li>
+            <li>Relational</li>
+            </ol>
+    </ol>
+    </div>  
+<!--Tables Section. Table 1:-->
+<table border="1" cellspacing="0" cellpadding="10" width="200"> 
+    <tr> <th bgcolor="gray"> Person </th>  <th bgcolor="gray"> Age </th> </tr>
+    <tr> <th bgcolor="LightGray"> Chris </th>   <td> 38 </td> </tr>
+    <tr> <th bgcolor="LightGray"> Dennis </th>  <td> 45 </td> </tr>
+    <tr> <th bgcolor="LightGray"> Sarah </th>   <td> 29 </td> </tr>
+    <tr> <th bgcolor="LightGray"> karen </th>   <td> 47 </td> </tr>
+    </table> <br/>
+
+<table border="1" cellspacing="0"> <caption><em>A test table with merged cells</em></caption>
+<tr> 
+    <td rowspan="2"></td>
+    <th colspan="2">Average</th>
+    <th rowspan="2">Red eyes</th>
+</tr>
+<tr>
+    <th>height</th>
+    <th>weight</th>
+</tr> 
+<tr>
+<th>Males</th>
+<td>1.9</td> 
+<td>0.003</td>
+<td>40%</td>
+</tr>
+<tr>
+<th>Females</th>
+<td>1.7</td> 
+<td>0.002</td>
+<td>43%</td>
+</tr>
+</table> 
+<br/>
+
+<table border="1">
+    <tr> 
+        <th rowspan="2">Category</th>
+        <th colspan="2">Fruits</th>
+        <th colspan="2">vegetables</th>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Name</th>
+        <th>Price</th>
+    </tr> 
+    <tr>
+    <td>Item 1</td>
+    <td>Apple</td> 
+    <td>$1.00</td>
+    <td>Carrot</td>
+    <td>$0.50</td>
+    </tr>
+    <tr>
+    <td>Item 2</td>
+    <td>Banana</td> 
+    <td>$0.75</td>
+    <td>Potato</td>
+    <td>$0.40</td>
+    </tr>
+    </table>
+    <br>
+ <div>
+    <h1>Welcome To My Website</h1>
+    <ul>
+        <li> <a href="#Intro" >Introduction</a></li>
+        <li> <a href="#Pets" >Pets</a></li>
+        <li> <a href="Music" >Favorite Band/Artist</a></li>
+        <li> <a href="#Family" >Family</a></li>
+        <li> <a href="#Season" >Favorite Season/a></li>
+        <li> <a href="#Food" >Favorite Food</a></li>
+        <li> <a href="#Movie" >Favorite Movie</a></li>
+        <li> <a href="#Person" >Biggest Inspiration</a></li>
+        <li> <a href="#States" >Places Ive Been To</a></li>
+        <li> <a href="#Future" >My Future </a></li>
+    </ul>
+    <h2 id="Intro">Introduction</h2>
+        <p> Hello my name is Brooke Spangler, and welcome to my website. I am 18 years old,
+            and a freshman at Thaddeus Stevens College of Technology.  
+            This website will be full of fun facts about me! </p>
+    <h2 id="Pets">Pets</h2>
+        <p>My favorite breed of dogs are French Bulldogs.
+        My family and I own 2, and their names are Tank and Bama.I also have two cats,
+        sadie, an exotic shorthair, and Fiona, an orange tabby cat. </p>
+    <img src="../img_bulldog.jpg" alt="french bulldog " width="200">
+    <h2 id="Music">Favorite Bands/Singers</h2>
+        <p> I love music and singing! A couple of artists that I love are
+            <ol type="1">
+                <li>Lana Del Rey</li>
+                <li>Fleetwood Mac</li>
+                <li>Ethel Cain</li>
+                <li>System of a Down</li>
+                <li>Alice in Chains</li>
+                <li>Korn </li>
+                <li>Slipknot</li>
+                <li>Pink Floyd</li>
+                <li>Charli XCX</li>
+            </ol>
+        </p>
+    <h2 id="Family">Family</h2> 
+        <p>In my family, there are 5 people, my mom Tabatha, 
+        my dad Justin, my older sister Grace, and my
+         younger brother JJ. 
+        </p>
+    <h2 id="Season">favorite Season</h2>
+        <p> My favorite season is Fall, because I love the leaves,
+            halloween, halloween movies, how cozy it is, fall scents, punpkin coffee and pumpkin chai, 
+            and fall activities such as Field of Screams or pumpkin picking.
+        </p>
+    <h2 id="Food">Favorite Food</h2> 
+        <p> My favorite foods are sushi, pasta, steak, cheese and bread.</p>
+    <h2 id="Movie">Favorite Movie</h2>
+        <p>My favorite movie is Coraline. It is very special to me
+            because me and my sister were obsessed with it as children. We even got matching coraline tattoos. 
+        Ive always been in love with the style and animation of the film, and the creepiness it brings.</p>
+    <h2 id="Person">Biggest Inspiration</h2>
+        <p>My biggest inspiration is my grandmother. She is the most caring, sweet, and awesome woman, 
+        who always puts others before herself, and is so selfless. 
+        She is so welcoming, and spoils us grandchildren, and can bake/cook the most wonderful foods.
+        I aspire to be like her when I am older. </p>
+    <h2 id="States">Places Ive Been</h2> 
+        <header>Some places I've been to are...</header>
+            <ul>
+            <li>Deleware</li>
+            <li>Maryland</li>
+            <li>Florida</li>
+            <li>Virginia</li>
+            <li>West Virginia</li>
+            <li>Ohio</li>
+            <li>New York</li>
+            <li>North Carolina</li>
+            <li>South Carolina</li>
+            <li>New Jersey</li>
+            <li>DC</li>
+            <li>Nassau, Bahamas</li>
+        </ul>
+    <h2 id="Future">My Future</h2> 
+        <p>In my future, I plan to married and living with my boyfriend, Dallas. We plan to build a big beautiful house, because he is a contracter, 
+        and I plan to work from home as a web developer and coder. I want to travel the world at some point, and have children after I experience life.  </p>
+ </div>
+
+
+<br>
+<header>Wikipedia</header>
+<em>Simple english</em> 
+
+<h2>Table of Contents</h2>
+<ul>
+    <a href="#Cake">Cake</a>
+    <a href="#Construction">Construction</a>
+        <ul>
+            <a href="#CreamedFat">Creamed Fat</a>
+            <a href="#EggFoam">EggFoam</a>
+        </ul>
+    <a href="#Decorations">Decorations</a>
+    <a href="#Gallery">Gallery</a>
+    <a href="#References">References</a>
+</ul>
+
+<h2 id="Cake">Cake</h2>
+<hr>
+<p>
+    A cake is a type of (usually) sweet dessert which is baked. 
+    Originally, it was a bread-like food, but no longer. 
+    Cakes are often made to celebrate special occasions like birthdays
+     or weddings. There are many kinds of cakes. It can be baked in an oven. Some savory cakes are made on a griddle or a frying pan.
+     <br>
+     <img src=" https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Wedding_cake_aux_fruits-rouges.jpg/250px-Wedding_cake_aux_fruits-rouges.jpg" alt="A wedding Cake " Height="100">
+<h2 id="Construction">Construction</h2>
+<hr>
+<p> 
+    Cakes are baked from a batter. Batter is made by mixing wet ingredients 
+    (like milk and eggs) with dry ingredients (like sugar and flour). 
+    The batter is baked in an oven. This way of baking is known as the
+     muffin method, because muffins are made this way. <br>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg/170px-Piece_of_chocolate_cake_on_a_white_plate_decorated_with_chocolate_sauce.jpg" alt="A Chocolate Cake " Height="100">
+</p> 
+<p>
+    Vegan versions of the same cake abstain from using animal products such as dairy or eggs and instead substitute them with
+     plant derived products such as nut milk and alginate-lecithin gel.<a href="#FirstSource"><sup>[1]</sup></a>
+</p> <br>
+<p>
+    Just like bread, cakes rise in the oven because they contain many small air bubbles. 
+    As cakes rise, the air bubbles expand. This is why the cake batter expands in the pan
+     (often to twice its original size). There are two ways of forming the air bubbles, which create different 
+    types of cakes. Almost every kind of cake belongs to one of these 
+    families. 
+</p>
+<h3 id="CreamedFat">Creamed fat</h3>
+<p>
+    These cakes are made with butter or another fat, like vegetable shortening.
+     The common way is to mix the fat and sugar, then add eggs, and then add flour. 
+     The fat should be soft. It should not be hard or liquid.
+      Mixing sugar with fat creates many very small air bubbles.
+     Most birthday cakes are made this way. Cupcakes are also made this way.
+</p> <br>
+<h3 id="EggFoam">Egg Foam</h3>
+<p>
+    These cakes are not made with solid butter or vegetable shortening. 
+    Some of these cakes are made with melted butter or vegetable oil. 
+    The common way is to mix the eggs and sugar, and then add flour. 
+    These cakes are often much taller, lighter and often spongier than
+    creamed fat cakes. Angelfood cake and chiffon cakes are egg foam cakes.
+    Most grocery stores with bakeries sell angelfood cakes. Angelfood cakes 
+    are made by beating egg whites with sugar. This traps a lot of tiny air
+    bubbles. The eggs and sugar are mixed with other ingredients. Then, the cake is baked.  
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/My_daughter_birthday_cake.jpg/220px-My_daughter_birthday_cake.jpg" alt="A three-pound homestyle birthday by someones birthday">
+</p>
+<h2 id="Decorations">Decorations</h2>
+<hr>
+A cake can be decorated with icing (also called "frosting"), 
+chocolate, fruit, and much more. A layer cake is made by stacking cakes
+with icing or filling between the layers. Birthday cakes are sometimes
+decorated with candles. Cakes can be served with berries or other kinds
+of fruit.
+<br>
+A large, rich cake is often called by the French word for "cake": "gâteau"
+ (plural: "gâteaux", both singular and plural pronounced "GA-toe").<a href="#SecondSource"><sup>[2]</sup></a> <a href="#ThirdSource"><sup>[3]</sup></a>
+  It may have a lot of cream. Some cakes can have edible paper on the top.
+<br>
+<h2 id="Gallery">Gallery</h2>
+<hr>
+<table>
+    <tr>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Bolo_Floresta_Negra_DSCN3536.jpg/120px-Bolo_Floresta_Negra_DSCN3536.jpg" alt="">
+            <p>Black Forrest cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/003_2016_10_15_Gebaeck_und_Kuchen.jpg/89px-003_2016_10_15_Gebaeck_und_Kuchen.jpg" alt="">
+            <p>Modern style wedding cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Chocolate_Cake_Flourless_%281%29.jpg/120px-Chocolate_Cake_Flourless_%281%29.jpg" alt="">
+            <p>A flourless chocolate cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Sifon_pandan.JPG/120px-Sifon_pandan.JPG" alt="">
+            <p>Pandan cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Chocolate_angel_food_cake_with_various_toppings.jpg/120px-Chocolate_angel_food_cake_with_various_toppings.jpg" alt="">
+            <p>Angel food cake</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Matcha_tiramisu.jpg/120px-Matcha_tiramisu.jpg" alt="">
+            <p>Matcha tiramisu cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Muttertagstorte_im_Mai.jpg/120px-Muttertagstorte_im_Mai.jpg" alt="">
+            <p>Chocolate cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Colorful_Cake_%28Unsplash%29.jpg/120px-Colorful_Cake_%28Unsplash%29.jpg" alt="">
+            <p>Rainbow coloured cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Bolo_de_Mel.JPG/120px-Bolo_de_Mel.JPG" alt="">
+            <p>Honey cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Greek_revani.JPG/120px-Greek_revani.JPG" alt="">
+            <p>Greek sponge cake</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Homemade_cake_for_mum%27s_day.jpg/120px-Homemade_cake_for_mum%27s_day.jpg" alt="">
+            <p>Homemade Mother's Day Cake</p>
+        </td>
+        <td>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Nussecke%2C_whole.jpg/120px-Nussecke%2C_whole.jpg" alt="">
+            <p>Nusscake</p>
+        </td>
+    </tr>
+</table> 
+<br>
+<h2 id="References">References</h2>
+<hr>
+<ol type="1">
+    <li id="FirstSoure"> Salwa, M. "PHYSICAL, CHEMICAL AND SENSORY CHARACTERISTICS OF VEGAN CAKE." Arab Universities Journal of Agricultural Sciences 17.2 (2009): 335-350.</li>
+    <li id="SecondSource">Olver, Lynne.<a href="https://www.foodtimeline.org/foodcakes.html" target="_blank"> "About cake".</a> foodtimeline.org. Retrieved 19 February 2016.</li>
+    <li id="ThirdSource">Goldstein, Darra (2015). The Oxford Companion to Sugar and Sweets. Oxford University Press. p. 92. <a href="https://simple.wikipedia.org/wiki/International_Standard_Book_Number" target="_blank">ISBN</a> <a href="https://simple.wikipedia.org/wiki/Special:BookSources/978-0-19-931339-6" target="_blank">978-0-19-931339-6.</a></li>
+</ol>
+
+
+    
+</body>
+</html>

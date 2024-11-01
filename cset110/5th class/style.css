@@ -1,0 +1,49 @@
+/*CSS Styling*/
+body {
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height:100%; /*full screen view*/
+    background-color: #7e5c89;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: auto 600px auto; /*fixed height for the rows*/
+    grid-template-columns: 100%; /*full width*/
+    height:100%; /*full height*/
+}
+
+.header { 
+    background-color: #553659;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width:100%; /*makes sure header spans across whle screen*/
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 580px 580px;
+    padding: 20px;
+    width: 1200px;
+    gap:20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.left, .right { /*both have same properties*/
+    background-color: #e5aef3;
+    padding: 20px;
+    border: 1px solid white;
+    width:540px;
+    min-height:540px;
+    box-sizing: border-box;
+}
+
+.footer {
+    background-color: #553659;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    width:100%; /*makes sure header spans across whle screen*/
+}

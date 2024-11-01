@@ -1,0 +1,274 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3</title> 
+    <style>
+      h1{
+        background-color: lightgray; 
+        padding:5px
+
+      }   
+      p{
+        margin:0px;
+        padding:2px;
+      } 
+      .font{
+        background-color: lightblue; 
+        margin: 0px;
+        padding:2px;
+      }
+      
+    .nav{ 
+      background-color: lightgoldenrodyellow;  
+      list-style-type: none;
+      text-align: center;
+      padding: 0px;
+      margin: 0px;
+
+    } 
+    .nav li{
+      display: inline-block;
+      padding:20px;
+      font-size: 20px;
+    } 
+    /*Universal* styling element. (*)
+     this adjusts the screen margin, padding and box sizing to reset browser.*/
+    *{
+      box-sizing: border-box;
+      margin:0px;
+      padding:0px;
+    } 
+    .page{
+      width:900px;
+      margin: 0 auto;
+      overflow: hidden;
+      background-color: #EAEDF0;
+    }
+    .menu{
+      height:100px;
+      background-color: #B2D6FF;
+    } 
+    .sidebar{ 
+      float:left;
+      height:300px;
+      width:200px;
+      background-color: #F09A9D;
+      
+    }  
+    .content{
+      float:left;
+      height: 500px;
+      width:650px;
+      background-color: #F5CF8E;
+    }  
+    .footer{ 
+      clear:both; 
+      background-color: #D6E9FE; 
+      overflow: hidden;
+    } 
+    .Column{
+        float:left;
+        width:31%;
+        margin: 20px 1.15%;
+        height: 160px;
+        background-color: #B2D6FF;
+    } 
+    .avatar{
+      float:left;
+      background-color: #56769a;
+      width: 60px;
+      height: 60px;
+      margin:25px;
+      border-radius: 40px; 
+      background-image: url("https://static.wikia.nocookie.net/powerpuff-base/images/2/23/Blossom-pic.png/revision/latest?cb=20140120091225");
+      background-size: cover;
+       
+
+    }  
+    .username{
+      margin-top:30px; 
+    } 
+    .comment{
+      margin:10px;
+      overflow:hidden; /*This is important*/  
+
+    }
+
+    </style> 
+
+</head>
+<body>
+<h1> Headings are block elements</h1>
+<p> paragraphs are blocks, too</p>
+<p class="font"><em>However</em></p>
+<p> em and strong elements are not. They are </p>
+ <p class="font"><strong> Inline</strong></p> 
+<br> 
+ <p> Block elements define the flow of the HTML document, while inline elements do not. </p> 
+ <ul class="nav"> 
+    <li><a href="#home">Home</a></li> 
+    <li><a href="#About">About Us<a></li>
+    <li><a href="#Clients"> Our Clients </a></li>
+    <li><a href="#Contact">Contact US</a></li> 
+ </ul> 
+<br> 
+ <br> 
+ <div style="background-color:#EAEDF0 ;">
+  <div class="Menu">Menu</div>>
+ <div class="page"> 
+    <div class="sidebar">Sidebar</div> 
+    <div class="content">Content</div> 
+  </div>
+  <div class="footer">
+      <div class="Column"> 
+        <div class="avatar"> </div>
+      <h3 class="username">Brooke Spangler</h3>
+      <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ullam sapiente exercitationem natus 
+        laboriosam doloribus dolorum sint omnis obcaecati laudantium magni veniam magnam eaque, cumque eos. 
+        Vitae laborum deserunt ducimus.</p>
+      </div>
+      <div class="Column"></div>
+      <div class="Column"></div>
+      <div class="Column"> </div>
+      <div class="Column"></div>
+      <div class="Column"></div>
+  
+  </div> 
+  </div>
+<br>
+ </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lecture 3</title> 
+    <style>
+      h1 {
+        background-color: lightgray; 
+        padding: 5px;
+      }   
+      p {
+        margin: 0px;
+        padding: 2px;
+      } 
+      .font {
+        background-color: lightblue; 
+        margin: 0px;
+        padding: 2px;
+      }
+      
+      .nav { 
+        background-color: lightgoldenrodyellow;  
+        list-style-type: none;
+        text-align: center;
+        padding: 0px;
+        margin: 0px;
+      } 
+      .nav li {
+        display: inline-block;
+        padding: 20px;
+        font-size: 20px;
+      } 
+      /*Universal styling element*/
+      * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+      } 
+      .page {
+        width: 900px;
+        margin: 0 auto;
+        overflow: hidden;
+        background-color: #EAEDF0;
+      }
+      .menu {
+        height: 100px;
+        background-color: #B2D6FF;
+      } 
+      .sidebar { 
+        float: left;
+        height: 300px;
+        width: 200px;
+        background-color: #F09A9D;
+      }  
+      .content {
+        float: left;
+        height: 500px;
+        width: 650px;
+        background-color: #F5CF8E;
+      }  
+      .footer { 
+        clear: both; 
+        background-color: #D6E9FE; 
+        overflow: hidden;
+      } 
+      .Column {
+        float: left;
+        width: 31%;
+        margin: 20px 1.15%;
+        height: 160px;
+        background-color: #B2D6FF;
+      } 
+      .avatar {
+        background-color: #56769a;
+        width: 60px;
+        height: 60px;
+        margin: 25px;
+        border-radius: 40px; 
+        background-image: url("https://static.wikia.nocookie.net/powerpuff-base/images/2/23/Blossom-pic.png/revision/latest?cb=20140120091225");
+        background-size: cover;
+      }  
+      .username {
+        margin-top: 10px; 
+      } 
+      .comment {
+        margin: 10px;
+        overflow: hidden; /* This is important */  
+      }
+    </style> 
+</head>
+<body>
+    <h1>Headings are block elements</h1>
+    <p>Paragraphs are blocks, too</p>
+    <p class="font"><em>However</em></p>
+    <p>Em and strong elements are not. They are</p>
+    <p class="font"><strong>Inline</strong></p> 
+    <br> 
+    <p>Block elements define the flow of the HTML document, while inline elements do not.</p> 
+    <ul class="nav"> 
+        <li><a href="#home">Home</a></li> 
+        <li><a href="#About">About Us</a></li>
+        <li><a href="#Clients">Our Clients</a></li>
+        <li><a href="#Contact">Contact Us</a></li> 
+    </ul> 
+    <br> 
+    <br> 
+    <div style="background-color: #EAEDF0;">
+        <div class="menu">Menu</div>
+        <div class="page"> 
+            <div class="sidebar">Sidebar</div> 
+            <div class="content">Content</div> 
+        </div>
+        <div class="footer">
+            <div class="Column"> 
+                <div class="avatar"></div>
+                <h3 class="username">Brooke Spangler</h3>
+                <p class="comment">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui ullam sapiente exercitationem natus 
+                laboriosam doloribus dolorum sint omnis obcaecati laudantium magni veniam magnam eaque, cumque eos. 
+                Vitae laborum deserunt ducimus.</p>
+            </div>
+            <div class="Column"></div>
+            <div class="Column"></div>
+            <div class="Column"></div>
+            <div class="Column"></div>
+            <div class="Column"></div>
+        </div> 
+    </div>
+    <br>
+</body>
+</html>
