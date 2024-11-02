@@ -432,7 +432,7 @@ h3{
     font-size: 40px; 
 }
 .quotes {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("/assets/back-customers.jpg");
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url("assets/back-customers.jpg");
     background-size: cover;
     color: #fff;
     background-attachment: fixed;
