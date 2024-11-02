@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Brooke's Pizzeria</title>
+  <link href="style2.css" rel="stylesheet" /> <!--Both external and Internal style sheets applied.-->
+  <style type="text/css">
+    /*internal style sheet*/
+    body {
+      background-image: url(marble-background.png);
+      background-color: #F9E9CA;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    table {
+      text-align: center;
+      font-size: 20px;
+      color: #BB1222; 
+      margin: 0px 320px; 
+      padding: 50px;
+    } 
+
+    .contact {
+      text-align: center;
+      font-size: 50px;
+      color: #111592;
+    } 
+    body {
+        background-image: url(marble-background.png); 
+        background-color: #F9E9CA; 
+        font-family:'Courier New', Courier, monospace;
+      }
+
+     .table1 {
+       width: 950px;
+       border-collapse: collapse;
+       text-align: center;
+       font-weight: bold;
+       margin: 15px 600px;
+     } 
+
+     caption {
+       color:darkblue;
+       font-size: 25px;
+       padding: 15px;
+     } 
+
+     th {
+       font-size: 18px;
+       color: darkred;
+       background-color: #111592;
+       border: 2px solid darkred; 
+       width: 20%;
+     } 
+
+     td {
+      color: darkred;  
+      border: 2px dotted darkblue;
+     }
+  </style>
+</head>
+
+<body>
+  <div class="container"><h1 class="blue-letters">Brooke's Pizzeria</h1><!--Container for banner on left side. Alternating color text below.-->
+    <h1 class="red-letters">We're Open!</h1>
+    <p class="blue-letters">Monday-Thursday: 10AM-10PM</p>
+    <p class="red-letters">Friday & Saturday: 10AM-11PM</p>
+    <p class="blue-letters">Sunday: Closed</p>
+    <br>
+    <h2 class="red-letters">NOW BAKING<span class="blue-letters"> COAL-FIRED</span> ARTISAN PIZZA </h2> <br>
+    <h3 class="blue-letters">Ancient Italian <br> Famous Recipes</h3>
+    <h3 class="red-letters">Grandma's Favorites<br> and More</h3>
+    <h3 class="blue-letters">Be the First to Sample Our Pizzas and You could <br> WIN FREE PIZZAS <br> for a month
+    </h3>
+    <h3 class="red-letters">we also serve a variety of Pastas and Salads</h3>
+  </div>
+
+  <div class="header1">Order Now: 123-456-7891</div> <!--Two banners, non working nav bar, but includes hover color changes.-->
+  <div class="header2">
+    <div class="navbar"><a href="">Home</a></div>
+    <div class="navbar"><a href="">Menu</a></div>
+    <div class="navbar"><a href="">Pictures</a></div>
+    <div class="navbar"><a href="">Location</a></div>
+    <div class="navbar"><a href="">Order</a></div>
+    <div class="navbar"><a href="">Contact</a></div>
+  </div>
+
+
+  
+  <table class="table"> <!-- table for the restaraunt, with images of what it looks like. The table is even, no matter image size, and includes headers, borders, and font color.-->
+    <tr>
+      <th colspan="2">Our Restaurant</th>
+    </tr>
+    <tr>
+      <td><img width="525px" height="475px" src="rest-outside.webp"></td>
+      <td><img width="525px" height="475px" src="rest-inside.jpg"></td>
+    </tr> 
+    <tr> 
+      <tr>
+        <th colspan="2">Our Favorite Pizza</th>
+      </tr>
+      <td><img width="525px" height="475px" src="meat-lovers-pizza.jpg"></td>
+      <td><img width="525px" height="475px" src="pep-pizza.jpg"></td>
+    </tr>
+    <tr>
+      <td><img width="525px" height="475px" src="veg-pizza.jpg"></td>
+      <td><img width="525px" height="475px" src="hawaiian-pizza.jpg"></td>
+
+  </table> 
+
+  <table class="table1"> <!--Another table, but for the pizzas available on menu.-->
+    <caption>Pizzas</caption> 
+      <tr>
+        <th>Pizza type</th> 
+        <th>Sauce</th> 
+        <th>crust</th>
+        <th>Topping</th>
+        <th>Price</th>
+      </tr>
+    
+        <tr>
+          <td>Cheese</td>
+          <td>Red</td>
+          <td>Stuffed</td>
+          <td>Mozzarella, Provolone, and Cheddar Cheese</td>
+          <td>$5</td>
+        </tr> 
+    
+        <tr>
+          <td>Pepperoni</td>
+          <td>Red</td>
+          <td>Thin</td>
+          <td>Mozzarella Cheese, and Pepperonis</td>
+          <td>$7</td>
+        </tr> 
+      
+        <tr>
+          <td>BBQ Chicken</td>
+          <td>BBQ</td>
+          <td>Stuffed</td>
+          <td>Mozzarella Cheese and Chicken</td>
+          <td>$8</td>
+        </tr>
+      
+        <tr>
+          <td>Buffalo Chicken</td>
+          <td>Buffalo</td>
+          <td>Stuffed</td>
+          <td>Mozzarella Cheese, Ranch, and Chicken</td>
+          <td>$8</td>
+        </tr>
+      
+        <tr>
+          <td>Meat Lovers</td>
+          <td>Red</td>
+          <td>thin</td>
+          <td>Mozzarella Cheese, bacon, Sausage, and Pepperoni</td>
+          <td>$7</td>
+        </tr>
+      
+        <tr>
+          <td>Vegetarian</td>
+          <td>White</td>
+          <td>Thin</td>
+          <td>Mozzarella cheese, Spinach, Onions, Mushrooms, and Olives</td>
+          <td>$9</td>
+        </tr>
+      
+        <tr>
+          <td>Hawaíían</td>
+          <td>Red</td>
+          <td>Thin</td>
+          <td>Mozzarella Cheese, Pineapple and Canadian Bacon</td>
+          <td>$8</td>
+        </tr>
+      
+        <tr>
+          <td>Chocolate</td>
+          <td>Hazelnut Spread</td>
+          <td>Thin</td>
+          <td>Mini Choolate and White Chocolate Chips</td>
+          <td>$9</td>
+        </tr>
+      
+    </table> 
+    
+       <table class="table1"> <!--Another table, but for the pastas available on menu.-->
+    <caption>Pastas</caption> 
+      <tr>
+        <th>Pasta type</th> 
+        <th>Sauce</th> 
+        <th>Meat</th>
+        <th>Price</th>
+      </tr>
+    
+        <tr>
+          <td>Fettuccine</td>
+          <td>White Sauce</td>
+          <td>Cispy Chicken Fritta</td>
+          <td>$5</td>
+        </tr> 
+    
+        <tr>
+          <td>Spaghetti</td>
+          <td>Traditional Marinara</td>
+          <td>Italian Sausage</td>
+          <td>$7</td>
+        </tr> 
+      
+        <tr>
+          <td>Rigatoni</td>
+          <td>Five Cheese Marinara</td>
+          <td>Meatballs</td>
+          <td>$8</td>
+        </tr>
+      
+        <tr>
+          <td>Angel Hair</td>
+          <td>traditional Meat Sauce</td>
+          <td>Grilled Chicken</td>
+          <td>$8</td>
+        </tr>
+      
+        <tr>
+          <td>Cavatappi</td>
+          <td>Creamy Mushroom </td>
+          <td>Crispy Shrimp Fritta</td>
+          <td>$7</td>
+        </tr>
+         
+        <tr>
+          <td>Gluten Free Rotini</td>
+          <td>Red Sauce </td>
+          <td>Crispy Chicken</td>
+          <td>$9</td>
+        </tr>
+       </table> 
+    
+          <table class="table1"> <!--Another table, but for the beverages available on menu.-->
+    <caption>Drinks</caption> 
+      <tr>
+        <th>Soda ($1.25)</th> 
+        <th>Tea ($2)</th> 
+        <th>Assortment (varies)</th>
+      </tr>
+    
+        <tr>
+          <td>Coke Cola</td>
+          <td>iced Tea</td>
+          <td>Water</td>
+        </tr> 
+    
+        <tr>
+          <td>Pepsi</td>
+          <td>Diet Iced Tea</td>
+          <td>Lemonade</td>
+        </tr> 
+      
+        <tr>
+          <td>Sprite</td>
+          <td>Sweet Tea</td>
+          <td>Smoothies</td>
+        </tr>
+      
+        <tr>
+          <td>Mountain Dew</td>
+          <td>Tea and Lemonade</td>
+          <td>Water and Lemon</td>
+        </tr>
+      
+        <tr>
+          <td>Dr. pepper </td>
+          <td>hot Tea </td>
+          <td>Sports Drink</tr>
+         
+        <tr>
+          <td>Root Beer</td>
+          <td>Chai tea </td>
+          <td>Cris Chicken</td>
+        </tr>
+       </table>
+</body>
+
+</html>
